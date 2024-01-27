@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: text-file-presentation
+  description: Text File Showing The Functionality Of Backstage
+spec:
+  type: service
+  owner: service@example.com
+  lifecycle: experimental
