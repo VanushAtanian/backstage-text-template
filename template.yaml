@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: springboot-template
-  title: Spring Boot JSON API
-  description: Create a simple microservice using Spring Boot Java with customizable JSON API
+  name: text-template-presentation
+  title: Text File Template
+  description: Text File Showing The Power of Backstage Tempaltes
   tags:
     - text
     - discovery
