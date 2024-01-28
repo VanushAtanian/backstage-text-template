@@ -21,10 +21,20 @@ spec:
           title: Filename
           type: string
           description: Our txt file will be named by this value
+
         first:
           title: First Value To Replace
           type: string
           description: This Value Will Be Inserted Into The Linked Place
+
+        name:
+          title: Name
+          type: string
+          description: Unique name of the component
+          ui:autofocus: true
+          ui:options:
+            rows: 5
+
     - title: Choose a location
       required:
         - repoUrl
@@ -46,6 +56,7 @@ spec:
         values:
           filename: ${{ parameters.filename }}
           first: ${{ parameters.first }}
+          name: ${{ parameters.name }}
 
     - id: publish
       name: Publish
