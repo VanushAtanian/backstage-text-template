@@ -57,11 +57,6 @@ spec:
 
     - id: register
       name: Register
-      action: catalog:register
+      action: debug:log
       input:
-        repoContentsUrl: '{{ steps.publish.output.repoContentsUrl }}'
-        catalogInfoPath: '/catalog-info.yaml'
-
-  output:
-    remoteUrl: '{{ steps.publish.output.remoteUrl }}'
-    entityRef: '{{ steps.register.output.entityRef }}'
+        message: ${{ steps['publish'].output.remoteUrl }}
